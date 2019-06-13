@@ -3,16 +3,13 @@ security:
         enabled: false
     oauth2:
         client:
-            access-token-uri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/token
-            user-authorization-uri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/auth
-            client-id: web_app
-            client-secret: web_app
-            client-authentication-scheme: form
+            accessTokenUri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/token
+            userAuthorizationUri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/auth
+            clientId: web_app
+            clientSecret: web_app
+            clientAuthenticationScheme: form
             scope: openid profile email
         resource:
-            filter-order: 3
-            user-info-uri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/userinfo
-            token-info-uri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/token/introspect
-            prefer-token-info: false
-            jwt:
-                key-uri: https://login.meanerror.com/auth/realms/jhipster
+            userInfoUri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/userinfo
+            tokenInfoUri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/token/introspect
+            preferTokenInfo: false

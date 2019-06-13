@@ -5,8 +5,8 @@ security:
         client:
             accessTokenUri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/token
             userAuthorizationUri: https://login.meanerror.com/auth/realms/jhipster/protocol/openid-connect/auth
-            clientId: web_app
-            clientSecret: web_app
+            clientId: jhipster-registry
+            clientSecret: jhipster-registry
             clientAuthenticationScheme: form
             scope: openid profile email
         resource:

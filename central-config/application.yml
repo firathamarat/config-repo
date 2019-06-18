@@ -21,3 +21,22 @@ eureka:
   client:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
+
+
+# zuul:
+#   routes:
+#     subway:
+#       service-id: /subway/**
+#       path: /subway/**
+#       url: "http://localhost:7777/"
+#       strip-prefix: false
+#     subway1:
+#       service-id: /subway1/**
+#       path: /subway1/**
+#       strip-prefix: false
+#       url: "http://localhost:6666/"
+#     subway2:
+#       service-id: /subway2/**
+#       path: /subway2/**
+#       url: "http://localhost:5555/"
+#       strip-prefix: false

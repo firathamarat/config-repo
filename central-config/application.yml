@@ -46,18 +46,41 @@ eureka:
 #       url: "driver"
 #       strip-prefix: false
 
+# zuul:
+#   routes:
+#     order:
+#       path: /order/**
+#       serviceId: order
+#     customer:
+#       path: /customer/**
+#       serviceId: customer
+#     operation:
+#       path: /operation/**
+#       serviceId: operation
+#     driver:
+#       path: /driver/**
+#       serviceId: driver
+
 zuul:
   routes:
     order:
+      service-id: order
       path: /order/**
-      serviceId: order
+      url: "/services/order/**"
+      strip-prefix: false
     customer:
+      service-id: customer
       path: /customer/**
-      serviceId: customer
+      strip-prefix: false
+      url: "/services/customer/**"
     operation:
+      service-id: operation
       path: /operation/**
-      serviceId: operation
+      url: "/services/operation/**"
+      strip-prefix: false
     driver:
+      service-id: driver
       path: /driver/**
-      serviceId: driver
+      url: "/services/driver/**"
+      strip-prefix: false
 

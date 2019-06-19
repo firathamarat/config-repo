@@ -34,11 +34,11 @@ zuul:
       service-id: services/customer/**
       path: services/customer/**
       strip-prefix: false
-      url: "services/customer"
+      url: "customer"
     operation:
-      service-id: /operation/**
+      service-id: services/operation/**
       path: services/operation/**
-      url: "services/operation"
+      url: "operation"
       strip-prefix: false
     driver:
       service-id: services/driver/**

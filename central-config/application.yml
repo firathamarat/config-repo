@@ -23,26 +23,41 @@ eureka:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
 
 
+# zuul:
+#   routes:
+#     order:
+#       service-id: services/order/**
+#       path: /order/**
+#       url: "order"
+#       strip-prefix: false
+#     customer:
+#       service-id: services/customer/**
+#       path: /customer/**
+#       strip-prefix: false
+#       url: "customer"
+#     operation:
+#       service-id: services/operation/**
+#       path: /operation/**
+#       url: "operation"
+#       strip-prefix: false
+#     driver:
+#       service-id: services/driver/**
+#       path: /driver/**
+#       url: "driver"
+#       strip-prefix: false
+
 zuul:
   routes:
     order:
-      service-id: services/order/**
       path: /order/**
-      url: "order"
-      strip-prefix: false
+      serviceId: order
     customer:
-      service-id: services/customer/**
       path: /customer/**
-      strip-prefix: false
-      url: "customer"
+      serviceId: customer
     operation:
-      service-id: services/operation/**
       path: /operation/**
-      url: "operation"
-      strip-prefix: false
+      serviceId: operation
     driver:
-      service-id: services/driver/**
       path: /driver/**
-      url: "driver"
-      strip-prefix: false
+      serviceId: driver
 

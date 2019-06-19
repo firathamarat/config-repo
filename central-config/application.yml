@@ -28,20 +28,21 @@ zuul:
     order:
       service-id: /order/**
       path: /order/**
-      url: "http://localhost:7777/"
+      url: order
       strip-prefix: false
     customer:
       service-id: /customer/**
       path: /customer/**
       strip-prefix: false
-      url: "http://localhost:6666/"
+      url: customer
     operation:
       service-id: /operation/**
       path: /operation/**
-      url: "http://localhost:5555/"
+      url: operation
       strip-prefix: false
     driver:
       service-id: /driver/**
       path: /driver/**
-      url: "http://localhost:5555/"
+      url: driver
       strip-prefix: false
+

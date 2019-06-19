@@ -26,23 +26,23 @@ eureka:
 zuul:
   routes:
     order:
-      service-id: /order/**
-      path: /order/**
+      service-id: services/order/**
+      path: services/order/**
       url: "order"
       strip-prefix: false
     customer:
-      service-id: /customer/**
-      path: /customer/**
+      service-id: services/customer/**
+      path: services/customer/**
       strip-prefix: false
-      url: "customer"
+      url: "services/customer"
     operation:
       service-id: /operation/**
-      path: /operation/**
-      url: "operation"
+      path: services/operation/**
+      url: "services/operation"
       strip-prefix: false
     driver:
-      service-id: /driver/**
-      path: /driver/**
+      service-id: services/driver/**
+      path: services/driver/**
       url: "driver"
       strip-prefix: false
 

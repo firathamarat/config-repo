@@ -65,22 +65,22 @@ zuul:
   routes:
     order:
       service-id: order
-      path: /order/**
+      path: /services/order/**
       url: "/services/order/**"
       strip-prefix: false
     customer:
       service-id: customer
-      path: /customer/**
-      strip-prefix: false
+      path: /services/customer/**
       url: "/services/customer/**"
+      strip-prefix: false
     operation:
       service-id: operation
-      path: /operation/**
+      path: /services/operation/**
       url: "/services/operation/**"
       strip-prefix: false
     driver:
       service-id: driver
-      path: /driver/**
+      path: /services/driver/**
       url: "/services/driver/**"
       strip-prefix: false
 

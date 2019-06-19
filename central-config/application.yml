@@ -28,21 +28,21 @@ zuul:
     order:
       service-id: /order/**
       path: /order/**
-      url: order
+      url: "order"
       strip-prefix: false
     customer:
       service-id: /customer/**
       path: /customer/**
       strip-prefix: false
-      url: customer
+      url: "customer"
     operation:
       service-id: /operation/**
       path: /operation/**
-      url: operation
+      url: "operation"
       strip-prefix: false
     driver:
       service-id: /driver/**
       path: /driver/**
-      url: driver
+      url: "driver"
       strip-prefix: false
 

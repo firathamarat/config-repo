@@ -1,7 +1,7 @@
 zuul:
   routes:
     order:
-      serviceId: order
+      service-id: order
       path: /order/**
       # url: order
       # strip-prefix: false

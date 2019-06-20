@@ -31,6 +31,11 @@ zuul:
       url: "meanerror.com"
       strip-prefix: false
 
+zuul:
+  routes:
+    order-gateway:
+      path: /services/ordergateway/**
+      url: order-gateway
 
 # zuul:
 #   routes:

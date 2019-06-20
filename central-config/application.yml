@@ -31,12 +31,6 @@ eureka:
 #       url: "meanerror.com"
 #       strip-prefix: false
 
-zuul:
-  routes:
-    order-gateway:
-      path: /ordergateway/**
-      url: ordergateway
-      strip-prefix: false
 
 # zuul:
 #   routes:

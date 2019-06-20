@@ -34,8 +34,9 @@ eureka:
 zuul:
   routes:
     order-gateway:
-      path: /services/ordergateway/**
-      url: www.google.com
+      path: /ordergateway/**
+      url: ordergateway
+      strip-prefix: false
 
 # zuul:
 #   routes:

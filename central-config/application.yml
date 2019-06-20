@@ -34,7 +34,7 @@ zuul:
     operationgateway:
       service-id: operationgateway
       path: /operationgateway/**
-      url: operationgateway
+      url: /services/operationgateway/**
       strip-prefix: false
 
 

@@ -25,10 +25,16 @@ eureka:
 
 zuul:
   routes:
-    order:
+    ordergateway:
       service-id: ordergateway
       path: /services/ordergateway/**
       url: ordergateway
+      strip-prefix: false
+
+    operationgateway:
+      service-id: operationgateway
+      path: /services/operationgateway/**
+      url: operationgateway
       strip-prefix: false
 
 

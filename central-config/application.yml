@@ -28,12 +28,12 @@ zuul:
     ordergateway:
       service-id: ordergateway
       path: /services/ordergateway/**
-      url: ordergateway
+      # url: ordergateway
 
     operationgateway:
       service-id: operationgateway
       path: /services/operationgateway/**
-      url: operationgateway
+      # url: operationgateway
 
 
 # zuul:

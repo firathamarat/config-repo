@@ -23,13 +23,13 @@ eureka:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
 
 
-zuul:
-  routes:
-    order:
-      service-id: ordergateway/**
-      path: /ordergateway/**
-      url: "meanerror.com"
-      strip-prefix: false
+# zuul:
+#   routes:
+#     order:
+#       service-id: ordergateway/**
+#       path: /ordergateway/**
+#       url: "meanerror.com"
+#       strip-prefix: false
 
 zuul:
   routes:

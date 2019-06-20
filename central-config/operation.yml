@@ -3,5 +3,5 @@ zuul:
     operation:
       # service-id: operation
       path: /operation/**
-      url: operation
+      url: http://discovery.meanerror.com/
       # strip-prefix: false

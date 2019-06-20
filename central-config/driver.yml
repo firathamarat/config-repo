@@ -1,7 +1,7 @@
 zuul:
   routes:
     driver:
-      # service-id: driver
+      # serviceId: driver
       path: /driver/**
       url: driver
       # strip-prefix: false

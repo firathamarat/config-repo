@@ -28,13 +28,13 @@ zuul:
     ordergateway:
       service-id: ordergateway
       path: /ordergateway/**
-      url: /services/ordergateway/**
+      url: ordergateway
       strip-prefix: false
 
     operationgateway:
       service-id: operationgateway
       path: /operationgateway/**
-      url: /services/operationgateway/**
+      url: operationgateway
       strip-prefix: false
 
 

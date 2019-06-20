@@ -1,4 +1,7 @@
 zuul:
+   host:
+        connect-timeout-millis: 5000
+        socket-timeout-millis: 10000
   routes:
     order:
       # service-id: order

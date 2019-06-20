@@ -27,7 +27,7 @@ zuul:
   routes:
     order:
       service-id: ordergateway
-      path: /services/operationgateway/**
+      path: /services/ordergateway/**
       url: ordergateway
       strip-prefix: false
 

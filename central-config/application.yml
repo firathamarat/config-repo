@@ -35,7 +35,7 @@ zuul:
   routes:
     order-gateway:
       path: /services/ordergateway/**
-      url: order-gateway
+      url: ordergateway
 
 # zuul:
 #   routes:

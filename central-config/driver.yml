@@ -1,7 +1,0 @@
-zuul:
-  routes:
-    driver:
-      # serviceId: driver
-      path: /driver/**
-      url: driver
-      # strip-prefix: false

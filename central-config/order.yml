@@ -3,11 +3,12 @@ zuul:
   ignoredServices: '*'
   routes:
     order:
-      path: /services/order/api/**
-      serviceId: order-api
+      path: /services/order/**
+      serviceId: order
   retryable: true
 
 order:
+  hystrix.command.default.execution.timeout.enabled: false
   ribbon:
     ConnectTimeout: 10000
     ReadTimeout: 10000

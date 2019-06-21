@@ -1,0 +1,26 @@
+zuul:
+  routes:
+    order:
+      path: /order/**
+      serviceId: order
+  
+  host:
+        connect-timeout-millis: 5000
+        socket-timeout-millis: 20000            
+ribbon:
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 5
+    OkToRetryOnAllOperations: true
+    ReadTimeout: 2500
+    restclient:
+        enabled: true
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 20000
+      
+      # url: order
+      # strip-prefix: false

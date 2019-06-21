@@ -3,7 +3,7 @@ zuul:
   ignoredServices: '*'
   routes:
     order:
-      path: /services/order/**
+      path: /services/order/api/**
       serviceId: order
   retryable: true
 

@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    ordergateway:
+      path: /ordergateway/**
+      serviceId: ordergateway
+        
+      # url: order
+      # strip-prefix: false

@@ -1,7 +1,0 @@
-zuul:
-  routes:
-    customer:
-      # serviceId: customer
-      path: /customer/**
-      url: customer
-      # strip-prefix: false

@@ -4,7 +4,7 @@ zuul:
   routes:
     order:
       path: /services/order/api/**
-      serviceId: order
+      serviceId: order-api
   retryable: true
 
 order:

@@ -1,4 +1,5 @@
 zuul:
+ ignoredServices: "*"
   routes:
     order:
       path: /services/order/**

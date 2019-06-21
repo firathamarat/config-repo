@@ -1,12 +1,11 @@
 zuul:
-  stripPrefix: true
-  ignoredServices: '*'
-  hystrix.command.default.execution.timeout.enabled: false
-  ribbon:
-    ConnectTimeout: 10000
-    ReadTimeout: 10000
   routes:
     order:
-      path: /services/order/**
+      path: '/order/** '
       serviceId: order
-  retryable: true
+        
+      # url: order
+      # strip-prefix: false
+
+
+      

@@ -1,7 +1,8 @@
 zuul:
   routes:
     order:
-      path: order/api**
+    ignored-services: "*"
+      path: /services/order/api**
       serviceId: order
       
       # url: order

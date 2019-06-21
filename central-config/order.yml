@@ -1,8 +1,9 @@
 zuul:
-  routes:
-    order:
-      path: order/api**
-      serviceId: order
-      
-      # url: order
-      # strip-prefix: false
+  retryable: true
+    routes:
+      order:
+        path: '/order-api/** '
+        serviceId: order-api
+        
+        # url: order
+        # strip-prefix: false

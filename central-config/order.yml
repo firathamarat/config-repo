@@ -1,8 +1,16 @@
 zuul:
+  stripPrefix: true
+  ignoredServices: '*'
   routes:
     order:
-      path: '/order/** '
-      serviceId: order
-        
-      # url: order
-      # strip-prefix: false
+      path: /order/**
+      serviceId: order-api
+  retryable: true
+
+order:
+  ribbon:
+    maxAutoRetries: 3
+    MaxAutoRetriesNextServer: 3
+    OkToRetryOnAllOperations: true
+    ReadTimeout: 5000
+    ConnectTimeout: 3000    

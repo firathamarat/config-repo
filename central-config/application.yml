@@ -21,6 +21,3 @@ eureka:
   client:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
-
-compression: 
-  enabled: false

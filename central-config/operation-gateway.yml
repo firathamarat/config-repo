@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    operation-gateway:
+      path: '/operation-gateway/** '
+      serviceId: operation-gateway
+        
+      # url: order
+      # strip-prefix: false

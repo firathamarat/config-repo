@@ -21,14 +21,3 @@ eureka:
   client:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: SEMAPHORE
-          # See https://github.com/spring-cloud/spring-cloud-netflix/issues/1330
-          # thread:
-          timeoutInMilliseconds: 25000
-  shareSecurityContext: true

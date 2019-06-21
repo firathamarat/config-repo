@@ -9,8 +9,5 @@ zuul:
 
 order:
   ribbon:
-    maxAutoRetries: 3
-    MaxAutoRetriesNextServer: 3
-    OkToRetryOnAllOperations: true
-    ReadTimeout: 5000
-    ConnectTimeout: 3000    
+    ConnectTimeout: 10000
+    ReadTimeout: 10000

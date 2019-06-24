@@ -21,3 +21,7 @@ eureka:
   client:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
+
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000

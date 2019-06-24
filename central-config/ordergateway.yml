@@ -1,11 +1,11 @@
 zuul:
   routes:
     order:
-      path: /order/**
+      path: /services/order/**
       serviceId: order
     
     customer:
-      path: /customer/**
+      path: /services/customer/**
       serviceId: custommer
       # url: order
       # strip-prefix: false

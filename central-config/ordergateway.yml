@@ -10,7 +10,6 @@ zuul:
       # url: customer
       # strip-prefix: false
 
-
 # zuul:
 #   routes:
 #     ordergateway:

@@ -11,8 +11,6 @@ zuul:
       # strip-prefix: false
 
 
-
-
 # zuul:
 #   routes:
 #     ordergateway:

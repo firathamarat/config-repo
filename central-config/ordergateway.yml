@@ -1,8 +1,11 @@
 zuul:
   routes:
-    ordergateway:
-      path: /ordergateway/**
-      serviceId: ordergateway
-        
+    order:
+      path: /order/**
+      serviceId: order
+    
+    customer:
+      path: /customer/**
+      serviceId: custommer
       # url: order
       # strip-prefix: false

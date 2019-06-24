@@ -1,18 +1,11 @@
 zuul:
   routes:
     order:
-      path: order/**
+      path: /order/**
       serviceId: order
     
-    customer: customer/**
-      serviceId: custommer
-      # url: order
+    customer:
+      path: /customer/**
+      serviceId: customer
+      # url: customer
       # strip-prefix: false
-
-ribbon:
-  eager-load:
-    enabled: true
-  eureka:
-    enabled: true
-  ConnectTimeout: 5000
-  ReadTimeout: 120000 #2 minutes

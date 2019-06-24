@@ -1,4 +1,11 @@
 zuul:
+  host:
+    max-total-connections: 1000
+    max-per-route-connections: 100
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 25000
+  semaphore:
+    max-semaphores: 500
   routes:
     order:
       path: /services/order/**
@@ -9,3 +16,19 @@ zuul:
       serviceId: custommer
       # url: order
       # strip-prefix: false
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
+
+ribbon:
+  eager-load:
+    enabled: true
+  eureka:
+    enabled: true
+  ConnectTimeout: 5000
+  ReadTimeout: 120000 #2 minutes

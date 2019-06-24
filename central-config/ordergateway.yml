@@ -1,18 +1,10 @@
 zuul:
-  host:
-    max-total-connections: 1000
-    max-per-route-connections: 100
-    connect-timeout-millis: 15000
-    socket-timeout-millis: 25000
-  semaphore:
-    max-semaphores: 500
   routes:
     order:
-      path: /services/order/**
+      path: order/**
       serviceId: order
     
-    customer:
-      path: /services/customer/**
+    customer: customer/**
       serviceId: custommer
       # url: order
       # strip-prefix: false

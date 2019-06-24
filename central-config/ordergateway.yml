@@ -9,19 +9,6 @@ zuul:
       # url: order
       # strip-prefix: false
 
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
-  command:
-    default:
-      execution:
-        timeout:
-          enable: false
-
 ribbon:
   eager-load:
     enabled: true

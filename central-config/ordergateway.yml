@@ -23,7 +23,12 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 100000
+            timeoutInMilliseconds: 60000
+  command:
+    default:
+      execution:
+        timeout:
+          enable: false
 
 ribbon:
   eager-load:

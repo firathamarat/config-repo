@@ -9,3 +9,13 @@ zuul:
       serviceId: customer
       # url: customer
       # strip-prefix: false
+
+
+
+
+# zuul:
+#   routes:
+#     ordergateway:
+#       path: /ordergateway/**
+#       serviceId: ordergateway
+        

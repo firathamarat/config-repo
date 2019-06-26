@@ -3,11 +3,9 @@ zuul:
     driver:
       path: /driver/**
       serviceId: driver
-    
     order:
       path: /order/**
       serviceId: order
-    
     operation:
       path: /operation/**
       serviceId: operation

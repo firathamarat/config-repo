@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    order:
+      path: /order/**
+      serviceId: order
+    
+    customer:
+      path: /customer/**
+      serviceId: customer
+      # url: customer
+      # strip-prefix: false

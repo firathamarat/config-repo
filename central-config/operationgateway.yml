@@ -9,12 +9,3 @@ zuul:
       serviceId: operation
       # url: operation
       # strip-prefix: false
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: THREAD
-          thread:
-            timeoutInMilliseconds: 60000

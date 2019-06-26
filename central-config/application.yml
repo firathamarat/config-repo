@@ -21,3 +21,12 @@ eureka:
   client:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000

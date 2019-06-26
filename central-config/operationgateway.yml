@@ -1,8 +1,11 @@
 zuul:
   routes:
-    operationgateway:
-      path: /operationgateway/**
-      serviceId: operationgateway
-        
-      # url: order
+    driver:
+      path: /driver/**
+      serviceId: driver
+    
+    operation:
+      path: /operation/**
+      serviceId: operation
+      # url: operation
       # strip-prefix: false

@@ -4,11 +4,11 @@ zuul:
     socket-timeout-millis: 60000
   routes:
     order:
-      path: /services/order/**
+      path: /order/**
       serviceId: order
     
     customer:
-      path: /services/customer/**
+      path: /customer/**
       serviceId: customer
       # url: customer
       # strip-prefix: false

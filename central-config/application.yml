@@ -22,13 +22,26 @@ eureka:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
 
+zuul:
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+    max-total-connections: 200
+    max-per-route-connections: 20
+    time-unit: MILLISECONDS
+    time-to-live: 10000
+    
+ribbon:
+  eureka:
+    enable: true
+  isSecure: false
+  readTimeout: 60000
+  connectTimeout: 60000
+
 hystrix:
   command:
     default:
       execution:
         isolation:
-          thread: 
+          thread:
             timeoutInMilliseconds: 60000
-
-ribbon:
-  ReadTimeout: 6000

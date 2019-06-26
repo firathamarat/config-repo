@@ -15,12 +15,4 @@ zuul:
       # strip-prefix: false
 
 ribbon:
-  ReadTimeout: 10000      
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+  ReadTimeout: 10000

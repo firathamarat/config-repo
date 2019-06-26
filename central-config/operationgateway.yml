@@ -1,7 +1,4 @@
 zuul:
-  host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 60000
   routes:
     driver:
       path: /driver/**

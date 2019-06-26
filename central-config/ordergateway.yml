@@ -10,9 +10,11 @@ zuul:
       # url: customer
       # strip-prefix: false
 
-# zuul:
-#   routes:
-#     ordergateway:
-#       path: /ordergateway/**
-#       serviceId: ordergateway
-        
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000

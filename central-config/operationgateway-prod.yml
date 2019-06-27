@@ -9,12 +9,6 @@ zuul:
       # url: operation
       # strip-prefix: false
 
-driver:
-  ribbon:
-    ReadTimeout: 60000
-    ConnectTimeout: 60000
-
-operation:
-  ribbon:
-    ReadTimeout: 60000
-    ConnectTimeout: 60000
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000

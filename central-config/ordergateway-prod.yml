@@ -9,12 +9,6 @@ zuul:
       # url: customer
       # strip-prefix: false
 
-order:
-  ribbon:
-    ReadTimeout: 60000
-    ConnectTimeout: 60000
-
-customer:
-  ribbon:
-    ReadTimeout: 60000
-    ConnectTimeout: 60000
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000

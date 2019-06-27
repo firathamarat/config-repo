@@ -8,14 +8,3 @@ zuul:
       serviceId: customer
       # url: customer
       # strip-prefix: false
-
-hystrix:
-  command:
-    order:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 15000
-customer:
-  ribbon:
-    ReadTimeout: 15000

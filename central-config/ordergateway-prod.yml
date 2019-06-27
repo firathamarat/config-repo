@@ -1,9 +1,9 @@
 zuul:
   routes:
-    order-app:
+    order:
       path: /order/**
       serviceId: order
-    customer-app:
+    customer:
       path: /customer/**
       serviceId: customer
       # url: customer

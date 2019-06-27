@@ -1,9 +1,9 @@
 zuul:
   routes:
-    driver:
+    driver-app:
       path: /driver/**
       serviceId: driver
-    operation:
+    operation-app:
       path: /operation/**
       serviceId: operation
       # url: operation

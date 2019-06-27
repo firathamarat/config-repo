@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: zuul-server
+    
 zuul:
   routes:
     driver:

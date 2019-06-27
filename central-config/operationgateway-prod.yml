@@ -2,9 +2,9 @@ zuul:
   routes:
     driver:
       path: /driver/**
-      url: http://driver
+      url: https://meanerror.com/services/driver
     operation:
       path: /operation/**
-      url: http://operation
+      url: https://meanerror.com/services/operation
       # url: operation
       # strip-prefix: false

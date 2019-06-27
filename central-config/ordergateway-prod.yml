@@ -2,9 +2,9 @@ zuul:
   routes:
     order:
       path: /order/**
-      url: http://order
+      url: https://meanerror.com/services/order
     customer:
       path: /customer/**
-      url: http://customer
+      url: https://meanerror.com/services/customer
       # url: customer
       # strip-prefix: false

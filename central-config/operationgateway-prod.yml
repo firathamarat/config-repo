@@ -1,13 +1,13 @@
 zuul:
   routes:
     driver:
-      path: /services/driver/**
+      path: /driver/**
       serviceId: driver
     order:
-      path: /services/order/**
+      path: /order/**
       serviceId: order
     operation:
-      path: /services/operation/**
+      path: /operation/**
       serviceId: operation
       # url: operation
       # strip-prefix: false

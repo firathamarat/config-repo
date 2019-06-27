@@ -8,18 +8,3 @@ zuul:
       serviceId: operation
       # url: operation
       # strip-prefix: false
-
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 10000
-
-ribbon:
-  ReadTimeout: 10000               
-zuul: 
-  host:
-    socket-timeout-millis: 10000 

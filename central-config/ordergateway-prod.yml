@@ -2,9 +2,9 @@ zuul:
   routes:
     order:
       path: /order/**
-      url: https://order
+      serviceId: order
     customer:
       path: /customer/**
-      url: http://customer
+      serviceId: customer
       # url: customer
       # strip-prefix: false

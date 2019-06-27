@@ -2,9 +2,9 @@ zuul:
   routes:
     driver:
       path: /driver/**
-      url: http://driver
+      serviceId: driver
     operation:
       path: /operation/**
-      url: http://operation
+      serviceId: operation
       # url: operation
       # strip-prefix: false

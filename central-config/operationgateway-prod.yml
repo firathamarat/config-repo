@@ -3,9 +3,11 @@ zuul:
     driver:
       path: /driver/**
       serviceId: driver
+      strip-prefix: false
     operation:
       path: /operation/**
       serviceId: operation
+      strip-prefix: false
       # url: operation
       # strip-prefix: false
 

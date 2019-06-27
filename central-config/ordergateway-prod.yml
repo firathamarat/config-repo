@@ -3,11 +3,12 @@ zuul:
     order:
       path: /order/**
       serviceId: order
+      strip-prefix: false
     customer:
       path: /customer/**
       serviceId: customer
       # url: customer
-      # strip-prefix: false
+     strip-prefix: false
 
 ribbon:
   ReadTimeout: 20000

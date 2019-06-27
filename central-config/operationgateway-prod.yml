@@ -1,14 +1,10 @@
-spring:
-  application:
-    name: zuul-server
-    
 zuul:
   routes:
     driver:
       path: /driver/**
-      serviceId: driver
+      url: http://driver
     operation:
       path: /operation/**
-      serviceId: operation
+      url: http://operation
       # url: operation
       # strip-prefix: false

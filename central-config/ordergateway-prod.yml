@@ -1,14 +1,10 @@
-spring:
-  application:
-    name: zuul-server
-
 zuul:
   routes:
     order:
       path: /order/**
-      serviceId: order
+      url: http://order
     customer:
       path: /customer/**
-      serviceId: customer
+      url: http://customer
       # url: customer
       # strip-prefix: false

@@ -3,14 +3,23 @@ zuul:
     driver:
       path: /driver/**
       serviceId: driver
-      strip-prefix: false
     operation:
       path: /operation/**
       serviceId: operation
-      strip-prefix: false
       # url: operation
       # strip-prefix: false
 
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 10000               
+zuul: 
+  host:
+    socket-timeout-millis: 10000 

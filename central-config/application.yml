@@ -1,60 +1,23 @@
-# #common configuration shared between all applications
+#common configuration shared between all applications
 configserver:
   name: Docker JHipster Registry
   status: Connected to the JHipster Registry running in Docker
-
-eureka:
-  client:
-    enabled: true
-    service-url:
-    defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
-    healthcheck:
-      enabled: true
-    fetch-registry: true
-    register-with-eureka: true
-    instance-info-replication-interval-seconds: 10
-    registry-fetch-interval-seconds: 10
-ribbon:
-  ConnectTimeout: 10000
-  ReadTimeout: 60000
-  eureka:
-    enabled: true
-
-metrics:
-  logs: # report metrics in the logs
-    enabled: true
-    report-frequency: 60 # in seconds
-
-logging:
-  logstash: # forward logs to ELK
-    enabled: false
-    host: jhipster-logstash
-
-# See http://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html
-zuul: # those values must be configured depending on the application specific needs
-  host:
-    max-total-connections: 1000
-    max-per-route-connections: 100
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 10000
-  semaphore:
-    max-semaphores: 500
-
-# See https://github.com/Netflix/Hystrix/wiki/Configuration
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
-
-# ===================================================================
-# JHipster specific properties
-# ===================================================================
 
 jhipster:
   security:
     authentication:
       jwt:
         base64-secret: M2NjNmFiYTYwYTlhNTEwOWRkYjMwMDk1NTcxYWM3YWI5MmVmODI4YzBlNTcyMDkwNGRlNGI0MmJmNWNmZDY0OGM5MTc5MzNhMTM1YTRkNTcwY2ZjZDU5ZTAyYTJlNWI5MmM5NQ==
+  logging:
+    logstash: # forward logs to ELK
+      enabled: true
+      host: jhipster-logstash
+  metrics:
+    logs: # report metrics in the logs
+      enabled: true
+      report-frequency: 60 # in seconds
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka

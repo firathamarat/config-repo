@@ -16,6 +16,13 @@ jhipster:
     logs: # report metrics in the logs
       enabled: true
       report-frequency: 60 # in seconds
+ribbon:
+  eager-load:
+    enabled: true
+  eureka:
+    enabled: true
+  ConnectTimeout: 5000
+  ReadTimeout: 120000 #2 minutes
 
 eureka:
   client:

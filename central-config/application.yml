@@ -58,16 +58,6 @@ jhipster:
     authentication:
       jwt:
         base64-secret: M2NjNmFiYTYwYTlhNTEwOWRkYjMwMDk1NTcxYWM3YWI5MmVmODI4YzBlNTcyMDkwNGRlNGI0MmJmNWNmZDY0OGM5MTc5MzNhMTM1YTRkNTcwY2ZjZDU5ZTAyYTJlNWI5MmM5NQ==
-    swagger:
-      title: hemenAbi API
-      description: hemenAbi API documentation
-      version: 0.0.1
-      termsOfServiceUrl:
-      contactName:
-      contactUrl:
-      contactEmail:
-      license:
-      licenseUrl:
   ribbon:
     # comma separated list of profiles to show a ribbon on the GUI
     displayOnActiveProfiles: prod

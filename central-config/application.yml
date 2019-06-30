@@ -58,16 +58,6 @@ jhipster:
     authentication:
       jwt:
         base64-secret: M2NjNmFiYTYwYTlhNTEwOWRkYjMwMDk1NTcxYWM3YWI5MmVmODI4YzBlNTcyMDkwNGRlNGI0MmJmNWNmZDY0OGM5MTc5MzNhMTM1YTRkNTcwY2ZjZDU5ZTAyYTJlNWI5MmM5NQ==
-    async:
-      corePoolSize: 2
-      maxPoolSize: 50
-      queueCapacity: 10000
-    cors: #By default CORS are not enabled. Uncomment to enable.
-      allowed-origins: "*"
-      allowed-methods: GET, PUT, POST, DELETE, OPTIONS
-      allowed-headers: "*"
-      allow-credentials: true
-      max-age: 1800
     swagger:
       title: hemenAbi API
       description: hemenAbi API documentation

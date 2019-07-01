@@ -7,7 +7,7 @@ jhipster:
   security:
     authentication:
       jwt:
-        base64-secret: M2NjNmFiYTYwYTlhNTEwOWRkYjMwMDk1NTcxYWM3YWI5MmVmODI4YzBlNTcyMDkwNGRlNGI0MmJmNWNmZDY0OGM5MTc5MzNhMTM1YTRkNTcwY2ZjZDU5ZTAyYTJlNWI5MmM5NQ==
+        base64-secret: Mjk5ODkyNWMyY2IxYzgxMzFmMWFkY2Y3NmRiNTExNWRkYTQ3NDViMzVhYmJhOGM4M2Q3ZGFmM2QyMjNiYTM3MjI3Y2FjNmFmODRmNzA4YzFiMzNkOWFmYzZkZTc0ZTBmNTYyYw==
   logging:
     logstash: # forward logs to ELK
       enabled: true
@@ -21,3 +21,4 @@ eureka:
   client:
     service-url:
       defaultZone: https://admin:${jhipster.registry.password}@discovery.meanerror.com/eureka
+      # defaultZone: http://admin:${jhipster.registry.password}@jhipster-registry:8761/eureka/

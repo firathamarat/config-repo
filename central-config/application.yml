@@ -20,5 +20,4 @@ jhipster:
 eureka:
   client:
     service-url:
-      defaultZone: https://admin:admin@discovery.meanerror.com/eureka
-      # defaultZone: http://admin:${jhipster.registry.password}@jhipster-registry:8761/eureka/
+      defaultZone: http://admin:${jhipster.registry.password}@jhipster-registry:8761/eureka/

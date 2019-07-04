@@ -1,0 +1,4 @@
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
